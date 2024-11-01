@@ -1,0 +1,5 @@
+tsc .\script.ts -w
+
+tsc -init
+
+tsc -w  para que lea todos los archivos ts
