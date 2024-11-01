@@ -1,14 +1,12 @@
 "use strict";
 //boolean 
-/* let  soyAlto: boolean = true;
-
-if(soyAlto){
-    console.log("Soy alto");
+let soyAlto = true;
+if (soyAlto) {
+    console.log("booleanos --Soy alto");
 }
-else{
-    console.log("No soy alto");
+else {
+    console.log("booleanos No soy alto");
 }
- */
 //number
 let barcelana = 0;
 let madrid = 0;
@@ -86,7 +84,27 @@ let persona3 = {
     teconologias: ["JavaScript", "TypeScript", "Angular", "Node.js"],
     isFreelance: true
 };
-function saludar(type) {
+function saludar(persona) {
     console.log(`Hola ${persona.nombre}`);
 }
 saludar(persona3);
+// Función para filtrar a las personas mayores de 18 años.
+// La función toma un array de objetos de tipo Person y devuelve otro array de Person.
+function filterAdults(people) {
+    // Usamos el método filter para iterar sobre cada persona en el array
+    // y seleccionamos solo aquellas personas cuya edad es mayor o igual a 18.
+    return people.filter(person => person.age >= 18);
+}
+// Creamos un array de objetos Person para usar como ejemplo.
+// Cada objeto tiene un nombre (name) y una edad (age).
+const people = [
+    { name: "Juan", age: 17 },
+    { name: "Ana", age: 22 },
+    { name: "Pedro", age: 15 },
+    { name: "Laura", age: 30 }
+];
+// Llamamos a la función filterAdults y pasamos el array de personas.
+// La función nos devolverá solo las personas con 18 años o más.
+const adults = filterAdults(people);
+// Mostramos en consola el resultado, que debería ser un array con las personas mayores de 18 años.
+console.log('ADULTS', adults); // Output: [{ name: "Ana", age: 22 }, { name: "Laura", age: 30 }]
