@@ -1,0 +1,18 @@
+body {
+        /* Agrega la imagen de fondo */
+        background-image: url('./img.png'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
+      
+        /* Configura la imagen para que cubra toda la pantalla */
+        background-size: cover;
+      
+        /* Centra la imagen y evita que se repita */
+        background-position: center;
+        background-repeat: no-repeat;
+      
+        /* Asegúrate de que ocupe toda la ventana */
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        color: white;
+      }
+      
